@@ -49,13 +49,13 @@ void Test0_Dijkstra(int startX=-1, int startY=-1, int goalX=-1, int goalY=-1){
 
     GridWithWeights sg  = make_diagram4();
 
-    Pos start   {8, 1};
-    Pos goal    {5, 4};
+    Pos start {8, 1};
+    Pos goal  {5, 4};
 
     if(startX > -1) start.x = startX;
     if(startY > -1) start.y = startY;
-    if(goalX > -1) goal.x = goalX;
-    if(goalY > -1) goal.y = goalY;
+    if(goalX  > -1) goal.x  = goalX;
+    if(goalY  > -1) goal.y  = goalY;
 
     std::unordered_map<Pos, Pos>    came_from;
     std::unordered_map<Pos, double> cost_so_far;
