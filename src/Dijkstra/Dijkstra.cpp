@@ -2,6 +2,7 @@
 #include <queue>
 
 #include "../SquareGrid/SquareGrid.hpp"
+
 std::unordered_map<Pos, Pos>
 BreadthFirstSearch(SquareGrid grid, Pos start, Pos goal) {
   std::queue<Pos> frontier;

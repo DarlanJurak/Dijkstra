@@ -1,7 +1,17 @@
 #include "SquareGrid/SquareGrid.hpp"
 #include "Dijkstra/Dijkstra.cpp"
 
+void old_test_BFS();
+    
 int main(int argc, char** argv) {
+
+    
+
+    return 0;
+
+}
+
+void old_test_BFS(){
 
     SquareGrid grid = make_diagram1();
 
@@ -15,7 +25,5 @@ int main(int argc, char** argv) {
     
     auto parents = BreadthFirstSearch(grid, start, goal);
     draw_grid(grid, 2, nullptr, &parents);
-
-    return 0;
 
 }
