@@ -16,12 +16,12 @@ bool operator==(const Pos& pos1, const Pos& pos2){
 
 // Comparison method for Pos struct
 bool operator!=(const Pos& pos1, const Pos& pos2){
-		return pos1.x == pos2.x && pos1.y == pos2.y;
+		return pos1.x != pos2.x || pos1.y != pos2.y;
 }
 
 // Comparison method for Pos struct
 bool operator<(const Pos& pos1, const Pos& pos2){
-		return pos1.x == pos2.x && pos1.y == pos2.y;
+		return pos1.x < pos2.x || pos1.y < pos2.y;
 }
 
 // Hash definition for specialized <unordered_set> of Pos struct
